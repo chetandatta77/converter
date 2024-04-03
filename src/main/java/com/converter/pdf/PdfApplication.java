@@ -9,10 +9,9 @@ public class PdfApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PdfApplication.class, args);
 		try {
-			FileConverter.converter();
+			Conversion.convertUsingParallelThreads();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-
 }
